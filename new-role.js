@@ -1,12 +1,30 @@
 const request = require('superagent')
-const d = require('./shared-data.js'
+const { user, password, endpoint } = require('./shared-data.js')
+const roles = require('./roles.js');
 
-request.post(d.endpoint)
-    .auth(d.u, d.p)
-    .set(d.contentType.contentType, d.contentType.Json)
-    .send('{"id":"Atlanta-dev-role","name":"Atlanta-dev-role","description": "Atlanta dev team role","privileges":["nx-repository-admin-maven2-maven-central-*","nx-analytics-all"]}')
-    .then(response => {
-        console.log(response.body);
-    }).catch(error => {
-        console.log(JSON.stringify(error, null, 2));
-    });
+// console.log(roles) Check for post
+
+// const promises = roles.map(item =>
+//     request.post(endpoint)
+//         .auth(user, password)
+//         .send(item)
+// )
+// Promise.all(promises).then(results => {
+//     results.map(item => console.log(item.body))
+// }).catch(e => console.log(e))
+
+//IIFE (immediately invoked function expression!)
+(async () => {
+    const promises = roles.map(item =>
+        request.post(endpoint)
+            .auth(user, password)
+            .send(item)
+    )
+    try {
+        const results = await Promise.all(promises)
+        results.map(item => console.log(item.body))
+    } catch (e) {
+        console.log(e.response.body)
+    }
+
+})() 
