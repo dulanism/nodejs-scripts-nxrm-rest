@@ -1,5 +1,5 @@
 const request = require('superagent')
-const d = require('./shared-data.js')
+const d = require('./shared-data.js'
 
 request.post(d.endpoint)
     .auth(d.u, d.p)
