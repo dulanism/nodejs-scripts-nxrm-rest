@@ -2,7 +2,10 @@
 
 ## About
 This is a toolbox for scripts that can be used consume Nexus Repository's (NXRM's) REST API. 
-All scripts are written in Nodejs. 
+All scripts are written in Nodejs.
+
+## Requirements
+You need npm and Node installed on your local machine before you go any further!
 
 ## Purpose
 I'm using this to provision NXRM for demo purposes, and to practice -- feverishly -- so that I 
