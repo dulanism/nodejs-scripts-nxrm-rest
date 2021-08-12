@@ -14,3 +14,7 @@ can acquire ["the glow"](https://www.youtube.com/watch?v=6CkrEpYmBIQ).
 ## References
 * [Superagent](https://visionmedia.github.io/superagent/)
 * [REST API, Sonatype Blog](https://blog.sonatype.com/four-steps-to-get-started-with-nexus-repo-using-new-rest-apis)
+
+## Goodbye!
+
+See you later!
