@@ -2,7 +2,7 @@
 
 ## About
 A toolbox of Node.js scripts that exercise Sonatype Nexus Repository Manager's
-(NXRM) REST API. The scripts use [superagent](https://visionmedia.github.io/superagent/)
+(NXRM) REST API. The scripts use [superagent](https://github.com/forwardemail/superagent)
 to POST JSON payloads at the NXRM security endpoints so that roles and users can
 be provisioned in bulk from a data file.
 
@@ -266,7 +266,7 @@ I'm using this to provision NXRM for demo purposes, and to practice —
 feverishly — so that I can acquire ["the glow"](https://www.youtube.com/watch?v=6CkrEpYmBIQ).
 
 ## References
-* [Superagent](https://visionmedia.github.io/superagent/)
+* [Superagent](https://github.com/forwardemail/superagent)
 * [Four Steps to Get Started with Nexus Repo Using New REST APIs](https://www.sonatype.com/blog/four-steps-to-get-started-with-nexus-repo-using-new-rest-apis)
 * [NXRM REST API reference](https://help.sonatype.com/repomanager3/integrations/rest-and-integration-api)
 
